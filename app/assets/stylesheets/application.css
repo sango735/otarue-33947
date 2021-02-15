@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+ 
+ *{
+   box-sizing:border-box;
+ }
+
+body {
+  background-image: url("toppage.jpg");
+  background-size:cover;
+
+}

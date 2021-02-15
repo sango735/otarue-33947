@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,SAAS,CAAA;EACP,KAAK,EAAC,KAAK;EACX,MAAM,EAAC,IAAI;EACX,gBAAgB,EAAE,QAAQ;CAC3B",
+    "sources": [
+        "otarues.scss"
+    ],
+    "names": [],
+    "file": "otarues.css"
+}
