@@ -1,5 +1,7 @@
 .footer-top{
   width:100vw;
   height:5vh;
-  background-color: bisque;
+  color:white;
+  text-align:center;
+  opacity:0.7;
 }
