@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+@import 'font_awesome5_webfont';
+@import 'font_awesome5.css';
+ 
+ *{
+   box-sizing:border-box;
+ }
+
+body {
+  background-image: url("toppage.jpg");
+  background-size:cover;
+
+}

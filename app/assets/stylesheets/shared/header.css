@@ -1,0 +1,46 @@
+.header-top{
+  width:100vw;
+  height:20vh;
+}
+
+.header-bar{
+  height: 20vh;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo{
+  width:30vw;
+  margin-top:10vh;
+  margin-left:2vw;
+  transition:all 0.5s;
+}
+
+.header-logo img{
+  width:100%;
+  height:100%;
+}
+
+.header-logo:hover{
+  opacity: 0.5;
+}
+
+.header-lists{
+  display:flex;
+  margin-right:4vw;
+}
+
+.header-menu{
+  color:#fff;
+  font-size:17px;
+  text-decoration: none;
+  margin-right:3vw;
+  font-family:serif;
+  transition:all 1s;
+
+}
+.header-menu:hover{
+  border-bottom:2px solid turquoise;
+  color:turquoise;
+}
