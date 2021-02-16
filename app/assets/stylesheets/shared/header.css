@@ -4,7 +4,7 @@
 }
 
 .header-bar{
-  height: 20vh;
+  height: 100%;
   display:flex;
   align-items: center;
   justify-content: space-between;
@@ -12,7 +12,7 @@
 
 .header-logo{
   width:30vw;
-  margin-top:10vh;
+  margin-top:5vh;
   margin-left:2vw;
   transition:all 0.5s;
 }
@@ -36,11 +36,10 @@
   font-size:17px;
   text-decoration: none;
   margin-right:3vw;
-  font-family:serif;
   transition:all 1s;
 
 }
 .header-menu:hover{
-  border-bottom:2px solid turquoise;
+  border-bottom:1px solid turquoise;
   color:turquoise;
 }
