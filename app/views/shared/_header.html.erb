@@ -1,6 +1,9 @@
 <div class="header-top">
   <div class="header-bar">
-  <%= link_to "Otarue",root_path,class: "header-logo fas fa-plane-departure fa-3x" %>
+
+  <%= link_to image_tag("logo.png"),root_path,class: "header-logo" %>
+<!-- <%= link_to "Otarue",root_path,class: "header-logo fas fa-plane-departure fa-3x" %> 
+-->
   <ul class ="header-lists">
     <li><%= link_to "このサイトについて" ,abouts_path,class: "header-menu"%></li>
     <li><%= link_to "ルートマップ" ,'#',class: "header-menu"%></li>
