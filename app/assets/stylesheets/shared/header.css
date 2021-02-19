@@ -12,16 +12,11 @@
 
 .header-logo{
   width:30vw;
-  margin-top:5vh;
   margin-left:2vw;
   transition:all 0.5s;
+  text-decoration: none;
+  color:#28292b;
 }
-
-.header-logo img{
-  width:100%;
-  height:100%;
-}
-
 .header-logo:hover{
   opacity: 0.5;
 }
@@ -32,7 +27,7 @@
 }
 
 .header-menu{
-  color:#fff;
+  color:#28292b;
   font-size:17px;
   text-decoration: none;
   margin-right:3vw;

@@ -4,4 +4,66 @@
 
 .map-main{
   width:100vw;
+  color: rgb(254, 246, 238);
+
+}
+
+.map-info{
+  text-align: center;
+  color:white;
+  font-size:27px;
+  padding-top:5vh;
+}
+
+.map-info::before{
+  content:'route map';
+  color:black;
+  font-size:20px;
+}
+
+.map-menu{
+  margin-top:10vh;
+  display:flex;
+}
+.map-menu-btn{
+  background-color: #293b6a;
+  display:inline-block;
+  max-width:180px;
+  background-color: #293b6a;
+  font-size:20px;
+  color:white;
+  text-decoration: none;
+  font-weight:bold;
+  padding:8px 25px;
+  border:1px dashed #fff;
+  box-shadow: 0 0 0 5px #293b6a;
+  margin: 0 auto;
+
+}
+.map-menu-btn:hover{
+  border-style: solid;
+}
+
+.map-otaru-station{
+  width:80%;
+  height:600px;
+  background-color:thistle;
+  margin: 5vh auto;
+}
+.map-south-station{
+  width:80%;
+  height:700px;
+  background-color: white;
+  margin: 5vh auto;
+}
+.map-south-headline{
+  font-size:20px;
+  text-align:center;
+  padding-top:3vh;
+}
+.map-south-info{
+  margin: 5vh auto;
+  width:90%;
+  height:500px;
+  background-color: aquamarine;
 }
