@@ -1,12 +1,38 @@
 <%= render "shared/header" %>
 <div class = "map-main">
-<p class ="map-info">
-<br/>下車する駅を選んでください
-</p>
+  
+  <div class ="map-headline">
+    <i class="fas fa-archway fa-2x"></i>
+    <p class ="map-info" >下車する駅を選択してください</p>
+    <p class ="map-info-small">
+    クリックで該当の箇所までリンクします。<br>
+    駅から近い順番で観光場所を記載しています。<br/>
+    私のおすすめは色んなお店がある南小樽駅！<br>
+    </p>
+  </div>
+
 <div class ="map-menu">
-  <%= link_to "小樽駅下車", {anchor: "map-otaru-station"},class:"map-menu-btn" %>
-  <%= link_to "南小樽駅下車", {anchor: "map-south-station"},class:"map-menu-btn" %>
-  <%= link_to "車で来た", "#",class:"map-menu-btn" %>
+  <ul>
+  <li>
+  <%= link_to "小樽駅下車", {anchor: "map-otaru-station"},class:"map-menu-list" %>
+  <%= link_to  image_tag("map1.jpg"), {anchor: "map-otaru-station"} %>
+  <p class="map-menu-info">硝子館や小樽運河、小樽駅直結のバスから行けるおたる水族館や、天狗山目的の方におすすめです。<br/>
+  <%= link_to "詳細へ" ,{anchor: "map-otaru-station"},class:"map-menu-link"%>
+  </p>
+  </li>
+  <li>
+  <%= link_to "南小樽駅下車", {anchor: "map-south-station"},class:"map-menu-list"%>
+  <%= link_to image_tag("map2.jpg"), {anchor: "map-south-station"}  %>
+  <p class="map-menu-info">硝子館や小樽運河、小樽駅直結のバスから行けるおたる水族館や、天狗山目的の方におすすめです。<br/>
+  <%= link_to "詳細へ" ,{anchor: "map-south-station"},class:"map-menu-link"%>
+  </p>
+  </li>
+  <li>
+  <%= link_to "車で行く", "#",class:"map-menu-list"%>
+  <%= image_tag("map3.jpg") %>
+  <p class="map-menu-info"></p>
+  </li>
+  </ul>
 </div>
 
 <div class ="map-otaru-station", id ="map-otaru-station">
@@ -14,13 +40,35 @@
 
 
 <div class ="map-south-station", id ="map-south-station">
-  <p class ="map-south-headline"> 
-    南小樽駅下車
-  </p>
+  <div class ="map-south-headline">
+    <p>南小樽駅下車</p>
+  </div>
+
   <div class ="map-south-info">
     <div class ="map-south-left">
+    <div class ="map-south-main">
+      <h3>■小樽オルゴール堂本館</h3>
+      <ul>
+        <li>■営業時間：9:00 ~ 18:00</li>
+        <li>■電話番号：（0134）22-XXXX</li>
+        <li>■小樽市住吉町４番１号</li>
+        <li>昭和45年に建てられた小樽オルゴール堂本館の住まい。<br/>
+        ノスタルジックな空間でオルゴールの世界をお楽しみください。</li>
+      </ul>
+      </div>
+      <div class ="map-south-option">
+      <ul>
+      <li>いいね</li>
+      <li><%= link_to "ご意見・ご要望", "#" %></li>
+      </ul>
+      <div class ="map-south-google">
+      <%= link_to "Google Mapで開く",
+      "https://www.google.com/maps/place/%E5%B0%8F%E6%A8%BD%E3%82%AA%E3%83%AB%E3%82%B4%E3%83%BC%E3%83%AB%E5%A0%82+%E6%9C%AC%E9%A4%A8/@43.1903412,141.0075187,19.71z/data=!4m21!1m15!4m14!1m6!1m2!1s0x5f0ae05eaca6a8a3:0x93e75da9fb9decc8!2z5YyX5rW36YGT5bCP5qi95biC5L2P5ZCJ55S677yR77yRIOWNl-Wwj-aovemnhQ!2m2!1d141.0077824!2d43.1867017!1m6!1m2!1s0x5f0ae05a5c0c6207:0xb4994e82f592e5c7!2z44CSMDQ3LTAwMTUg5YyX5rW36YGT5bCP5qi95biC5L2P5ZCJ55S677yU4oiS77yRIOWwj-aoveOCquODq-OCtOODvOODq-WggiDmnKzppKg!2m2!1d141.0078377!2d43.1905754!3m4!1s0x5f0ae05a5c0c6207:0xb4994e82f592e5c7!8m2!3d43.1905754!4d141.0078377",target: :_blank %>
+      </div>
+      </div>
     </div>
     <div class ="map-south-right">
+    <%=image_tag("map4.jpg")%>
     </div>
   </div>
 </div>
