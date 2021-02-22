@@ -1,23 +1,27 @@
 <%= render "shared/header" %>
+
 <div class = "about-main">
-  <div class = "about-info">
-    <p class="about-headline-small">
-      about
-    </p>
-    <p class = "about-headline">
-      このサイトについて
-    </p>
+  <div class = "about-info-left">
+    <p class = "about-headline"><br/>このサイトについて</p>
     <div class ="about-navi">
-    <p>
-      どうも張さんを馳走国家いろいろ危くを飛びだ顔その主義私か<br/>
-      帰着にについてご断食たたでしますて、<br/>
-      こういう直接は私か信念主義をさが、大森さんの点でがたの私がついご所有と行きけれども<br/>
-      どちら国家でご学習をさように現にご矛盾が起っませだで、<br/>
-      充分よほど約束が着ませていですものにもたですた。<br/>
-      しかしところがお主意に用いよのはそう大変と教えうて、<br/>
-      その人にもするですからという材料にありてみろならた。<br/>
-  </p>
-  <%= link_to "ルートマップへ", "#", class: "about-btn" %>
+      小樽観光に行きまっしょう<br/>
+      どういう経路で行けば良いか分からない。<br/>
+      <br>
+      心の拠り所が小樽にある髙橋が案内します。<br/>
+      <br/>
+      参考にして頂ければ幸いです。<br/>
+    </div>
+    <%= link_to "ルートマップへ", maps_path, class: "about-btn" %>
+  </div>
+
+
+  <div class ="about-info-right">
+    <div class ="about-img">
+    <ul>
+      <li><%= image_tag("about1.jpg") %></li>
+      <li><%= image_tag("about2.jpg")%></li>
+      <li><%= image_tag("about3.jpg")%></li>
+    </ul>
     </div>
   </div>
 </div>

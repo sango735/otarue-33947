@@ -1,0 +1,177 @@
+// Place all the styles related to the maps controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.map-main{
+  width:100vw;
+}
+.map-headline{
+  color:#28292b;
+  width:50%;
+  margin:0 auto;
+  text-align: center;
+  padding-bottom:1vh;
+  border-bottom:1px solid #28292b;
+  .map-info{
+    font-size:23px;
+    padding-top:2vh;
+  }
+  .map-info-small{
+    padding-top:2vh;
+    line-height:2em;
+    letter-spacing: 0.2em;;
+  }
+}
+
+.map-menu{
+  width:100%;
+  height:500px;
+  margin-top:5vh;
+  ul{
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    li{
+      border:2px solid #184baa;
+      border-radius: 30px 30px 10px 10px;
+      background-color:#184baa;
+      width:25%;
+      a{
+        text-decoration: none;   
+      }
+      .map-menu-list{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:20%;
+        color:rgb(254, 246, 238);
+        font-size:20px;
+      }
+      img{
+        width:100%;
+        height:50%;
+        object-fit: cover;
+      }
+      .map-menu-info{
+        width:100%;
+        height:28%;
+        color:#184baa;
+        line-height:2em;
+        letter-spacing: 0.1em;
+        background-color:white;  
+        .map-menu-link{
+          height:30%;
+          display: flex;
+          align-items: center;
+          justify-content: center;            
+          text-align: center;
+          background-color:#184baa;
+          font-size:18px;
+          color:white;
+        }
+        .map-menu-link:hover{
+          opacity:0.8;
+        }
+      }
+    }
+  }
+}
+
+
+.map-otaru-station{
+  width:100%;
+  height:600px;
+  background-color:thistle;
+  margin: 5vh auto;
+}
+
+.map-south-station{
+  width:100%;
+  height:700px;
+  background-color: white;
+  margin: 5vh auto;
+  
+  .map-south-headline{
+    width:30%;
+    height:50px;
+    font-size:20px;
+    margin:0 auto;
+    text-align:center;
+    font-weight: bold;
+    color:#28292b;
+    padding-top:3vh;
+    border-bottom:1px solid #28292b;
+  }
+  .map-south-info{
+    width:90%;
+    height:500px;
+    display: flex;
+    margin: 5vh auto;
+    .map-south-left{
+      width:50%;
+      height:100%;
+      .map-south-main{
+        height:70%;
+        color:#28292b;
+        font-weight: bold;
+        ul{
+          padding-top:10%;
+          float:left;
+          li{
+            padding-top:5%;
+          }
+          a{
+            color:#28292b;
+          }
+        }
+      }
+      .map-south-option{
+        height:30%;
+        width:100%;
+        display:flex;
+        align-items: center;
+        ul{
+          width:50%;
+          li{
+            padding-top:5%;
+            color:#28292b;
+            a{
+              color:#28292b;
+              border:1px solid #28292b;
+              padding:8px 16px;
+              transition:0.7s;
+            }
+            a:hover{
+              background:#28292b;
+              color:white;
+            }
+          }
+        }
+        .map-south-google{
+          width:50%;
+          a{
+            background-color:white;
+            color:#28292b;
+            padding:80px 23px;
+            border:1px solid #28292b;
+            border-radius:100%;
+            transition:0.7s;
+          }
+          a:hover{
+            background:#28292b;
+            color:white;
+          }
+        }        
+      }
+    }
+    .map-south-right{
+      width:50%;
+      height:100%;
+      img{
+        width:100%;
+        height:100%;
+        object-fit: cover;;
+      }
+    }
+  }
+}
