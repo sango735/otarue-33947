@@ -1,3 +1,63 @@
 // Place all the styles related to the orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.order-main{
+  width:100vw;
+  height:75vh;
+}
+
+.order-headline{
+  .order-info{
+  }
+}
+
+
+.order-menu{
+  width:100%;
+  height:500px;
+  color:#28292b;
+  ul{
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    li{
+      width:25%;
+      border:2px solid #28292b;
+      img{
+        width:100%;
+        height:50%;
+        object-fit: cover;
+        border-bottom:2px solid #28292b;
+      }
+      .order-info{
+        height:19%;
+        font-weight: bold;
+        font-size:17px;
+        border-bottom:2px solid #28292b;
+        text-align:center;
+      }
+      .order-price{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:10%;
+        font-weight: bold;
+        font-size:22px;
+        border-bottom:2px solid #28292b;
+      }
+      .order-link{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:20%;
+        background-color:white;
+        color:#28292b;
+        transition:1s;
+      }
+      .order-link:hover{
+        background-color:#28292b;
+        color:white;
+      }
+    }
+  }
+}

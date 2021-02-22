@@ -1,3 +1,30 @@
 <%= render "shared/header" %>
+<div class ="order-main">
 
+  <div class ="order-headline">
+  </div>
+  <div class ="order-menu">
+      <ul>
+        <li>
+          <%= image_tag("order1.jpg")%>
+          <p class="order-info">小樽市のいくら<br/>小樽市で獲れた新鮮ないくらです。</p>
+          <p class ="order-price">¥2,000</p>
+          <%= link_to "購入する" ,"#",class:"order-link"%>
+        </li>
+        <li>
+          <%= image_tag("order2.jpg")%>
+          <p class="order-info">たぬきの置物<br/>硝子館で作られたように見える狸の置物です。</p>
+          <p class ="order-price">¥1,000</p>
+          <%= link_to "購入する" ,"#",class:"order-link"%>
+        </li>
+        <li>
+          <%= image_tag("order3.jpg")%>
+          <p class="order-info">琉球ガラス<br/>硝子館では作られていないガラスです。</p>
+          <p class ="order-price">¥500</p>
+          <%= link_to "購入する" ,"#",class:"order-link"%>
+        </li>
+      </ul>
+  </div>
+
+</div>
 <%= render "shared/footer"%>
