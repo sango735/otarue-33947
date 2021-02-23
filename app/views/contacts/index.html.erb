@@ -1,5 +1,33 @@
 <%= render "shared/header" %>
+<div class = "contact-main">
+  <div class="contact-headline">
+    <i class="fas fa-comment-alt fa-2x"></i>
+    <p class ="map-info" >お問い合わせ・ご要望</p>
+    <p class ="map-info-small">
+    不具合やお問い合わせがあれば、<br/>
+    下記のフォームからお知らせ下さい。<br>
+    </p>
+  </div>
+  <div class="contact-form">
+    <%= form_with model:@contact,class:"form-main",local:true do |f| %>
+      <div class="form-group">
+        <h1>お問い合わせフォーム</h1>
+        <div class="form-wrap">
+          <label class="form-text">件名</label>
+          <span>（任意）</span>
+        </div>
+        <%= f.text_field :hoge,class:"title",placeholder:"件名を入力してください"%>
 
-
-
+        <div class="form-wrap">
+        <label class="form-text">お問い合わせ内容・ご要望</label>
+        <span class ="form-sup">（必須）</span>
+        </div>
+        <%= f.text_area :hoge, class:"form",placeholder:"問合せ内容を入力してください"%>
+      </div>
+      <div class="form-submit">
+        <%= f.submit "送信", class:"btn"%>
+      </div>
+    <% end %>
+  </div>
+</div>
 <%= render "shared/footer"%>

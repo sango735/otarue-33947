@@ -1,3 +1,86 @@
 // Place all the styles related to the contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.contact-main{
+  width:100vw;
+  color: #28292b;
+}
+.contact-headline{
+  color:#28292b;
+  width:50%;
+  margin:0 auto;
+  text-align: center;
+  padding-bottom:1vh;
+  border-bottom:1px solid #28292b;
+  .map-info{
+    font-size:23px;
+    padding-top:2vh;
+  }
+  .map-info-small{
+    padding-top:2vh;
+    line-height:2em;
+    letter-spacing: 0.2em;;
+  }
+}
+
+//フォーム内容
+
+.contact-form{
+  width:90vw;
+  height:550px;
+  margin:3vh auto 0;
+  display:block;
+  .form-main{
+    margin:0 auto;
+    width:80%;
+    height:100%;
+    display: block;
+    h1{
+      width:50%;
+      margin:0 auto;
+      text-align: center;
+      font-weight:bold;
+      font-size:22px;
+      border-bottom:2px solid #28292b;
+    }
+    .form-wrap{
+      margin:2vh auto 0;
+      font-weight:bold;
+      width:70%;
+      height:30px;
+      background:#f2f2f2;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      .form-sup{
+        color:red;
+      }
+    }
+    .title{
+      height:40px;
+      width:70%;
+      display: block;
+      margin:0 auto;
+    }
+    .form{
+      height:250px;
+      width:70%;
+      display: block;
+      margin:0 auto;
+    }
+    .form-submit{
+      height:40px;
+      width:100%;
+      margin-top: 3vh;
+      display: flex;
+      justify-self: center;
+      align-items: center;
+    .btn{
+        width:30%;
+        height:40px;
+        margin:0 auto;
+      }
+    }
+  
+  }
+}
