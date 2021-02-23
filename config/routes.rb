@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :abouts, only: [:index]
   resources :maps, only: [:index]
   resources :orders, only: [:index, :new, :create]
+  resources :contacts, only:[:index, :new, :create]
 end
