@@ -1,6 +1,8 @@
 .header-top{
   width:100vw;
   height:20vh;
+  background:white;
+  opacity: 0.7;
 }
 
 .header-bar{

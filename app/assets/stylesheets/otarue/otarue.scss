@@ -1,0 +1,30 @@
+.video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url('../images/map2.jpg') no-repeat;
+  background-size: cover;
+  } 
+
+.main-top{
+  width:100vw;
+  height:75vh; 
+}
+
+.main-catchcopy{
+  font-family: serif;
+  color:white;
+  font-size:35px;
+  padding-top: 20vh;
+  margin-left:3vw;
+  opacity: 0.7;
+}
+
+.main-catchcopy:first-letter{
+  font-size: 1.75em;
+}
