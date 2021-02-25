@@ -81,7 +81,6 @@
 .map-otaru-station{
   width:100%;
   height:600px;
-  background-color:thistle;
   margin: 5vh auto;
 }
 
@@ -144,6 +143,11 @@
             a:hover{
               background:#28292b;
               color:white;
+            }
+            .like{
+              width:60px;
+              height:60px;
+              outline:none;
             }
           }
         }

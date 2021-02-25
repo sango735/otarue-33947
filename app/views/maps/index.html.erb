@@ -14,10 +14,10 @@
 <div class ="map-menu">
   <ul>
   <li>
-  <%= link_to "小樽駅下車", {anchor: "map-otaru-station"},class:"map-menu-list" %>
-  <%= link_to  image_tag("map1.jpg"), {anchor: "map-otaru-station"} %>
+  <%= link_to "小樽駅下車", '#',class:"map-menu-list" %>
+  <%= link_to  image_tag("map1.jpg"), '#'%>
   <p class="map-menu-info">硝子館や小樽運河、小樽駅直結のバスから行けるおたる水族館や、天狗山目的の方におすすめです。<br/>
-  <%= link_to "詳細へ" ,{anchor: "map-otaru-station"},class:"map-menu-link"%>
+  <%= link_to "改装中", '#',class:"map-menu-link"%>
   </p>
   </li>
   <li>
@@ -58,7 +58,9 @@
       </div>
       <div class ="map-south-option">
       <ul>
-      <li>いいね</li>
+      <li>
+      <%= image_submit_tag("beforelike.jpg",id:"like_count",class:"like")%>
+      </li>
       <li><%= link_to "ご意見・ご要望", contacts_path %></li>
       </ul>
       <div class ="map-south-google">
