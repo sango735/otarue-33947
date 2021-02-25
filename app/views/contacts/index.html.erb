@@ -9,20 +9,21 @@
     </p>
   </div>
   <div class="contact-form">
-    <%= form_with model:@contact,class:"form-main",local:true do |f| %>
+    <%= form_with model:@contact, class:"form-main",local:true do |f| %>
+    <%= render "shared/error_message", model: @contact %>
       <div class="form-group">
         <h1>お問い合わせフォーム</h1>
         <div class="form-wrap">
           <label class="form-text">件名</label>
           <span>（任意）</span>
         </div>
-        <%= f.text_field :hoge,class:"title",placeholder:"件名を入力してください"%>
+        <%= f.text_field :title,class:"title",placeholder:"件名を入力してください"%>
 
         <div class="form-wrap">
         <label class="form-text">お問い合わせ内容・ご要望</label>
         <span class ="form-sup">（必須）</span>
         </div>
-        <%= f.text_area :hoge, class:"form",placeholder:"問合せ内容を入力してください"%>
+        <%= f.text_area :opinion, class:"form",placeholder:"問合せ内容を入力してください"%>
       </div>
       <div class="form-submit">
         <%= f.submit "送信", class:"btn"%>

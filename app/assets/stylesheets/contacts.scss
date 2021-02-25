@@ -5,6 +5,27 @@
   width:100vw;
   color: #28292b;
 }
+.contact-new{
+  width:100vw;
+  height:75vh;
+  .headline{
+    color:#28292b;
+    width:50%;
+    margin:0 auto;
+    text-align: center;
+    .map-info{
+      font-size:23px;
+      padding-top:2vh;
+    }
+    .map-info-small{
+      padding-top:2vh;
+      line-height:2em;
+      letter-spacing: 0.2em;;
+    }
+  }
+  
+}
+
 .contact-headline{
   color:#28292b;
   width:50%;
