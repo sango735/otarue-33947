@@ -56,3 +56,4 @@ gem 'haml-rails', "~>2.0"
 gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
 gem 'font_awesome5_rails'
+gem 'active_hash'

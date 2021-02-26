@@ -54,3 +54,101 @@
     }
   }
 }
+
+.order-headline{
+  color:#28292b;
+  width:40%;
+  margin:0 auto;
+  text-align: center;
+  padding-bottom:1vh;
+  border-bottom:1px solid #28292b;
+  .map-info{
+    font-size:23px;
+    padding-top:2vh;
+  }
+  .map-info-small{
+    padding-top:2vh;
+    line-height:2em;
+    letter-spacing: 0.2em;;
+  }
+}
+
+.order-form{
+  width:100%;
+  height:1000px;
+  text-align:center;
+  color:#28292b;
+  margin-top:5vh;
+  .form-main{
+    margin:0 auto;
+    width:70%;
+    height:100%;
+    display: block;
+    background-color: white;
+    .form-group{
+      margin:2vh auto;
+      width:80%;
+      h1{
+        width:50%;
+        margin:0 auto;
+        text-align: center;
+        font-weight:bold;
+        font-size:22px;
+        border-bottom:2px solid #28292b;
+      }
+      .form-wrap{
+        margin:2vh auto 0;
+        font-weight:bold;
+        width:50%;
+        height:30px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        .form-sup{
+          color:red;
+        }
+      }
+      .small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .form-small{
+        width:10%;
+        height:27px;
+      }
+      .form{
+        height:30px;
+        display: block;
+        margin:0 auto;
+        text-align:center;
+      }
+      .card{
+        width:40%;
+        height:30px;
+      }
+      .cvc{
+        width:10%;
+      }
+      .address{
+        margin-top:6vh;
+      }
+
+    }
+    .form-submit{
+      height:60px;
+      width:100%;
+      margin-top: 3vh;
+      display: flex;
+      justify-self: center;
+      align-items: center;
+    .btn{
+        width:30%;
+        height:40px;
+        margin:0 auto;
+      }
+      
+    }
+
+  }
+}

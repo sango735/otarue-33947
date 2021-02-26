@@ -1,36 +1,90 @@
 <%= render "shared/header" %>
-<div class ="order-main">
-
-  <div class ="map-headline">
-    <i class="fas fa-suitcase fa-2x"></i>
-    <p class ="map-info">購入情報</p>
+<div class = "order-main">
+  <div class ="order-headline">
+    <p class ="map-info">支払い方法</p>
     <p class ="map-info-small">
-    商品発送から到着まで３〜４日ほどお時間を頂きます。<br>
-    ※支払い方法はクレジットカードのみとなります。<br/>
+    商品発送から到着まで３〜４日ほどお時間を頂きます。<br><br/>
+    金額：<%= @item.price %>円<br/>
     </p>
   </div>
-  <div class ="order-menu">
-      <ul>
-        <li>
-          <%= image_tag("order1.jpg")%>
-          <p class="order-info">小樽市のいくら<br/>小樽市で獲れた新鮮ないくらです。</p>
-          <p class ="order-price">¥2,000</p>
-          <%= link_to "購入する" ,"#",class:"order-link"%>
-        </li>
-        <li>
-          <%= image_tag("order2.jpg")%>
-          <p class="order-info">たぬきの置物<br/>硝子館で作られたように見える狸の置物です。</p>
-          <p class ="order-price">¥1,000</p>
-          <%= link_to "購入する" ,"#",class:"order-link"%>
-        </li>
-        <li>
-          <%= image_tag("order3.jpg")%>
-          <p class="order-info">琉球ガラス<br/>硝子館では作られていないガラスです。</p>
-          <p class ="order-price">¥500</p>
-          <%= link_to "購入する" ,"#",class:"order-link"%>
-        </li>
-      </ul>
-  </div>
 
+  <div class="order-form">
+    <%= form_with model:@user_order,url: new_item_order_path, class:"form-main",local:true do |f| %>
+    <%= render "shared/error_message", model: @user_order %>
+
+      <div class="form-group">
+        <h1>クレジットカード情報入力</h1>
+        <div class="form-wrap">
+          <label class="form-text">カード番号</label>
+        <span class ="form-sup">（必須）</span>
+        </div>
+        <%= f.text_field :credit_num,class:"form card",id:"card-number",placeholder:"半角で入力してください"%>
+
+        <div class="form-wrap">
+          <label class="form-text">有効期限</label>
+        <span class ="form-sup">（必須）</span>
+        </div>
+        <div class="small">
+        <%= f.text_field :credit_month,id: "card-exp-month",class:"form-small",placeholder:"例:03"%>
+        <p>月</p>
+        <%= f.text_field :credit_year,id:"card-exp-year",class:"form-small",placeholder:"例:22"%>
+        <p>年</p>
+        </div>
+
+        <div class="form-wrap">
+        <label class="form-text">セキュリティコード</label>
+        <span class ="form-sup">（必須）</span>
+        </div>
+        <%= f.text_field :credit_sec,id:"card-cvc", class:"form cvc",placeholder:"例:123"%>
+
+        <h1 class ="address">送付先情報入力</h1>
+
+        <div class="form-wrap">
+          <label class="form-text">名前</label>
+        <span class ="form-sup">（必須）</span>
+        </div>
+        <%= f.text_field :title,class:"form",placeholder:"例：高橋　健太"%>
+
+        <div class="form-wrap">
+          <label class="form-text">郵便番号</label>
+        <span class ="form-sup">（必須）</span>
+        </div>
+        <%= f.text_field :title,class:"form",placeholder:"例：123-4567"%>
+
+        <div class="form-wrap">
+          <label class="form-text">都道府県</label>
+        <span class ="form-sup">（必須）</span>
+        </div>
+        <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+
+        <div class="form-wrap">
+          <label class="form-text">市区町村</label>
+        <span class ="form-sup">（必須）</span>
+        </div>
+        <%= f.text_field :prefecture,class:"form",placeholder:"例：札幌市中央区"%>
+
+        <div class="form-wrap">
+          <label class="form-text">番地</label>
+        <span class ="form-sup">（必須）</span>
+        </div>
+        <%= f.text_field :city,class:"form",placeholder:"例：１−２３"%>
+
+        <div class="form-wrap">
+          <label class="form-text">建物名</label>
+        </div>
+        <%= f.text_field :building_name,class:"form",placeholder:"例：中央ビル１０１"%>
+
+        <div class="form-wrap">
+          <label class="form-text">電話番号</label>
+        <span class ="form-sup">（必須）</span>
+        </div>
+        <%= f.text_field :phone_number,class:"form",placeholder:"半角で入力してください"%>
+
+      </div>
+      <div class="form-submit">
+        <%= f.submit "送信", class:"btn"%>
+      </div>
+    <% end %>
+  </div>
 </div>
 <%= render "shared/footer"%>
