@@ -9,7 +9,7 @@
   </div>
 
   <div class="order-form">
-    <%= form_with model:@user_order,url: new_item_order_path, class:"form-main",local:true do |f| %>
+    <%= form_with model:@user_order,url: item_orders_path, class:"form-main",id:"charge-form",local:true do |f| %>
     <%= render "shared/error_message", model: @user_order %>
 
       <div class="form-group">
@@ -18,7 +18,7 @@
           <label class="form-text">カード番号</label>
         <span class ="form-sup">（必須）</span>
         </div>
-        <%= f.text_field :credit_num,class:"form card",id:"card-number",placeholder:"半角で入力してください"%>
+        <%= f.text_field :credit_num,class:"form card",id:"card-number",maxlength: "16",placeholder:"半角で入力してください"%>
 
         <div class="form-wrap">
           <label class="form-text">有効期限</label>
@@ -35,7 +35,7 @@
         <label class="form-text">セキュリティコード</label>
         <span class ="form-sup">（必須）</span>
         </div>
-        <%= f.text_field :credit_sec,id:"card-cvc", class:"form cvc",placeholder:"例:123"%>
+        <%= f.text_field :credit_sec,id:"card-cvc", class:"form cvc",maxlength:"4",placeholder:"例:123"%>
 
         <h1 class ="address">送付先情報入力</h1>
 
@@ -43,13 +43,13 @@
           <label class="form-text">名前</label>
         <span class ="form-sup">（必須）</span>
         </div>
-        <%= f.text_field :title,class:"form",placeholder:"例：高橋　健太"%>
+        <%= f.text_field :name,class:"form",placeholder:"例：高橋　健太"%>
 
         <div class="form-wrap">
           <label class="form-text">郵便番号</label>
         <span class ="form-sup">（必須）</span>
         </div>
-        <%= f.text_field :title,class:"form",placeholder:"例：123-4567"%>
+        <%= f.text_field :postal_code,class:"form",maxlength:"8",placeholder:"例：123-4567"%>
 
         <div class="form-wrap">
           <label class="form-text">都道府県</label>
@@ -78,7 +78,7 @@
           <label class="form-text">電話番号</label>
         <span class ="form-sup">（必須）</span>
         </div>
-        <%= f.text_field :phone_number,class:"form",placeholder:"半角で入力してください"%>
+        <%= f.text_field :phone_number,class:"form",maxlength:"11",placeholder:"半角で入力してください"%>
 
       </div>
       <div class="form-submit">
