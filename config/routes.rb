@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :otarues, only: [:index]
   resources :abouts, only: [:index]
   resources :maps, only: [:index]
-  resources :items, only:[:index] do
+  resources :items, only:[:index,:new,:create] do
     resources :orders, only: [:index, :new, :create]
   end
   resources :contacts, only:[:index, :new, :create]

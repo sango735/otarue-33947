@@ -1,0 +1,7 @@
+<%= form_with model: @item,local: true do |f| %>
+
+<%= f.text_field :price, maxlength:"4" %>
+<%= f.submit "送信" ,class:"buy-red-btn" %>
+
+
+<% end %>
