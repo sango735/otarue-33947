@@ -14,20 +14,20 @@
         <li>
           <%= image_tag("order1.jpg")%>
           <p class="order-info">小樽市のいくら<br/>小樽市で獲れた新鮮ないくらです。</p>
-          <p class ="order-price">¥<%= @item.find(4).price %></p>
-          <%= link_to "購入する" ,item_orders_path(@item.find(4)),class:"order-link"%>
+          <p class ="order-price">¥<%= @item.find(1).price %></p>
+          <%= link_to "購入する" ,item_orders_path(@item.find(1)),class:"order-link"%>
         </li>
         <li>
           <%= image_tag("order2.jpg")%>
           <p class="order-info">たぬきの置物<br/>硝子館で作られたように見える狸の置物です。</p>
-          <p class ="order-price">¥<%= @item.find(14).price %></p>
-          <%= link_to "購入する" ,item_orders_path(@item.find(14)),class:"order-link"%>
+          <p class ="order-price">¥<%= @item.find(2).price %></p>
+          <%= link_to "購入する" ,item_orders_path(@item.find(2)),class:"order-link"%>
         </li>
         <li>
           <%= image_tag("order3.jpg")%>
           <p class="order-info">琉球ガラス<br/>硝子館では作られていないガラスです。</p>
-          <p class ="order-price">¥<%= @item.find(24).price %></p>
-          <%= link_to "購入する" ,item_orders_path(@item.find(24)),class:"order-link"%>
+          <p class ="order-price">¥<%= @item.find(3).price %></p>
+          <%= link_to "購入する" ,item_orders_path(@item.find(3)),class:"order-link"%>
         </li>
       </ul>
   </div>
