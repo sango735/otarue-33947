@@ -1,7 +1,6 @@
 <% if model.errors.any? %>
 
   <% model.errors.full_messages.each do |messages| %>
-  <li class="error"><%= messages %>
-  </li>
+    <li class="error"><%= messages %></li>
   <% end %>
 <% end %>
