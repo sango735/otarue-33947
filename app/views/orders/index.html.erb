@@ -1,71 +1,71 @@
 <%= render "shared/header" %>
+
 <div class = "order-main">
   <div class ="order-headline">
     <p class ="map-info">支払い方法</p>
     <p class ="map-info-small">
-    商品発送から到着まで３〜４日ほどお時間を頂きます。<br><br/>
-    金額：<%= @item.price %>円<br/>
+      商品発送から到着まで３〜４日ほどお時間を頂きます。<br><br/>
+      金額：<%= @item.price %>円<br/>
     </p>
   </div>
 
   <div class="order-form">
     <%= form_with model:@user_order,url: item_orders_path, class:"form-main",id:"charge-form",local:true do |f| %>
-    <%= render "shared/error_message", model: @user_order %>
+      <%= render "shared/error_message", model: @user_order %>
 
       <div class="form-group">
         <h1>クレジットカード情報入力</h1>
         <div class="form-wrap">
           <label class="form-text">カード番号</label>
-        <span class ="form-sup">（必須）</span>
+          <span class ="form-sup">（必須）</span>
         </div>
         <%= f.text_field :credit_num,class:"form card",id:"card-number",maxlength: "16",placeholder:"半角で入力してください"%>
 
         <div class="form-wrap">
           <label class="form-text">有効期限</label>
-        <span class ="form-sup">（必須）</span>
+          <span class ="form-sup">（必須）</span>
         </div>
         <div class="small">
-        <%= f.text_field :credit_month,id: "card-exp-month",class:"form-small",placeholder:"例:03"%>
-        <p>月</p>
-        <%= f.text_field :credit_year,id:"card-exp-year",class:"form-small",placeholder:"例:22"%>
-        <p>年</p>
+          <%= f.text_field :credit_month,id: "card-exp-month",class:"form-small",placeholder:"例:03"%>
+          <p>月</p>
+          <%= f.text_field :credit_year,id:"card-exp-year",class:"form-small",placeholder:"例:22"%>
+          <p>年</p>
         </div>
 
         <div class="form-wrap">
-        <label class="form-text">セキュリティコード</label>
-        <span class ="form-sup">（必須）</span>
+          <label class="form-text">セキュリティコード</label>
+          <span class ="form-sup">（必須）</span>
         </div>
         <%= f.text_field :credit_sec,id:"card-cvc", class:"form cvc",maxlength:"4",placeholder:"例:123"%>
 
         <h1 class ="address">送付先情報入力</h1>
-
         <div class="form-wrap">
           <label class="form-text">名前</label>
-        <span class ="form-sup">（必須）</span>
+          <span class ="form-sup">（必須）</span>
         </div>
         <%= f.text_field :name,class:"form",placeholder:"例：高橋　健太"%>
 
         <div class="form-wrap">
           <label class="form-text">郵便番号</label>
-        <span class ="form-sup">（必須）</span>
+          <span class ="form-sup">（必須）</span>
         </div>
         <%= f.text_field :postal_code,class:"form",maxlength:"8",placeholder:"例：123-4567"%>
 
         <div class="form-wrap">
           <label class="form-text">都道府県</label>
-        <span class ="form-sup">（必須）</span>
+          <span class ="form-sup">（必須）</span>
         </div>
         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
 
         <div class="form-wrap">
           <label class="form-text">市区町村</label>
-        <span class ="form-sup">（必須）</span>
+          <span class ="form-sup">（必須）</span>
         </div>
         <%= f.text_field :prefecture,class:"form",placeholder:"例：札幌市中央区"%>
 
         <div class="form-wrap">
           <label class="form-text">番地</label>
-        <span class ="form-sup">（必須）</span>
+          <span class ="form-sup">（必須）</span>
         </div>
         <%= f.text_field :city,class:"form",placeholder:"例：１−２３"%>
 
@@ -76,7 +76,7 @@
 
         <div class="form-wrap">
           <label class="form-text">電話番号</label>
-        <span class ="form-sup">（必須）</span>
+          <span class ="form-sup">（必須）</span>
         </div>
         <%= f.text_field :phone_number,class:"form",maxlength:"11",placeholder:"半角で入力してください"%>
 
