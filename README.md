@@ -19,7 +19,7 @@ https://i.gyazo.com/298f3e6a482f0996d9b8117898a77a61.gif
 問合せ機能
 https://i.gyazo.com/9a94c2dfe251b91966b999a850670c23.gif
 
-実装予定の機能：
+実装予定の機能：<br>
 index：<br>
 背景動画を数秒ごとに変化（動画を3つ用意）<br>
 indexのみヘッダーの色を変化<br><br>
