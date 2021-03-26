@@ -20,7 +20,7 @@ https://i.gyazo.com/298f3e6a482f0996d9b8117898a77a61.gif
 https://i.gyazo.com/9a94c2dfe251b91966b999a850670c23.gif
 
 実装予定の機能：
-index：背景動画を数秒ごとに変化（動画を3つ用意）
+index：背景動画を数秒ごとに変化（動画を3つ用意）<br>
       indexのみヘッダーの色を変化
 about：画像を数秒ごとに変化（画像を6つ用意）
       文言を変更
