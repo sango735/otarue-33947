@@ -1,0 +1,36 @@
+.header-top{
+  width:100vw;
+  height:20vh;
+}
+.header-bar,.header-bar-index{
+  height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-bar a{
+  color:#28292b;
+}
+.header-bar-index a{
+  color:white;
+}
+.header-logo{
+  width:30vw;
+  margin-left:2vw;
+  transition:all 0.5s;
+}
+
+.header-lists{
+  display:flex;
+  margin-right:4vw;
+  .header-menu{
+    font-size:17px;
+    margin-right:3vw;
+    transition:all 1s;
+  }
+}
+.header-menu:hover,.header-logo:hover{
+    color:turquoise;
+}
+
+
