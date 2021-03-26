@@ -21,7 +21,7 @@ https://i.gyazo.com/9a94c2dfe251b91966b999a850670c23.gif
 
 実装予定の機能：<br>
 index：<br>
-背景動画を数秒ごとに変化（動画を3つ用意）<br>
+<input type="checked" checked>背景動画を数秒ごとに変化（動画を3つ用意）<br>
 indexのみヘッダーの色を変化<br><br>
 
 about：<br>
