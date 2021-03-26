@@ -20,9 +20,8 @@ https://i.gyazo.com/298f3e6a482f0996d9b8117898a77a61.gif
 https://i.gyazo.com/9a94c2dfe251b91966b999a850670c23.gif
 
 実装予定の機能：<br>
-<form>
 index：<br>
-<input type="checkbox" checked>背景動画を数秒ごとに変化（動画を3つ用意）<br>
+背景動画を数秒ごとに変化（動画を3つ用意）<br>
 indexのみヘッダーの色を変化<br><br>
 
 about：<br>
@@ -52,7 +51,6 @@ bootstrapを導入して、レイアウトを整える<br>
 レスポンシブに対応させる<br>
 エラー文を日本語表記にする<br><br>
 
-</form>
 データベース設計：
 ER図
 https://i.gyazo.com/b410be995796c2813eee890ec4b527e0.png
