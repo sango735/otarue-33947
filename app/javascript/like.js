@@ -16,4 +16,4 @@ function like() {
     likeImage.src = imageLike[countValue].src;
   });
 }
-setInterval(like,1000);
+//setInterval(like,1000);
