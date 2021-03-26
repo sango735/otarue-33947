@@ -7,13 +7,10 @@ const video = () => {
   timer = setInterval(function(){
     timer++;
     if(timer % 6 === 0){
-      if(count < videoArray.length){
-        videoSlide.src = videoArray[count];
-        count++;
-      }else{
+      videoSlide.src = videoArray[count];
+      count++;
+      if(count >= videoArray.length){
         count = 0;
-        videoSlide.src = videoArray[count];
-        count++;
       }
     }
   },1000);
